@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Weather App</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<script type="text/javascript" src="Script.js"></script>
+</head> 
+<body>
+	<div class="mdiv">
+		<div class="container">
+			<h3 class="heading">Weather App</h3>
+			<form>
+				<div class="component">
+					<div>
+				<input type="text" name="city" id="city_name" placeholder="Enter city name" autofocus>
+				</div>
+				<div class="btn">
+				<button type="button" class="button" class="srch_btn" onclick="fetchCity()"><img src="https://cdn2.vectorstock.com/i/1000x1000/30/76/search-icon-vector-6093076.jpg" height="20px"> </button>
+				</div>
+				</div>
+				
+				<div align="center" style="margin-top: 10px;">	
+					<img src="https://i.pinimg.com/originals/e3/95/d1/e395d1c64c7f2b7e534923a929e46977.gif" alt="weathericon" height="120px">
+				</div>
+
+				<div align="center" style="margin-top: 20px;">
+					<span id="city">CITY NAME</span>
+					<br>
+					<span class="measurement" id="temp">0°C</span>
+				</div>
+
+				<div align="center" style="margin-top:20px">
+					<table width="100%" cellpadding="10px">
+						<tr align="center">
+							<td>
+								<h5 class="headings">WIND SPEED</h5>
+								<span class="measurement" id="wind_speed">0 Km/hr</span>
+							</td>
+							<td>
+								<h4 class="headings">HUMIDITY</h4>
+								<span class="measurement" id="humidity">0 g/kg</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</form>	
+		</div>
+	</div>
+</body>
+</html>
